@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header-area">
+      <!-- navbar start -->
+      <nav class="navbar fixed-top">
+        <div class="container">
+          <!-- brand -->
+          <a href="index.html" class="navbar-brand">Shopping Cart</a>
+          <!-- toggler/collapsible button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <i class="fas fa-shopping-cart fa-3x"></i>
+          </button>
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <h2>Your Products</h2>
+                <div id="articulosContenedor" class="articulos"></div>
+                <h3>Total: <span id="precioTotal"></span></h3>
+                <div id="btnsAcciones">
+                  <button type="button" class="comprar btn-1">Buy</button>
+                  <button type="button" class="limpiar btn-2">Clear</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- products section start -->
+      <section
+        class="img-gallery section-padding"
+        data-scroll-index="3"
+        id="portfolio"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="section-title">
+                <h4>store</h4>
+                <h2>our latest <span>products</span></h2>
+              </div>
+            </div>
+          </div>
+          <!-- filter btn -->
+          <div class="row">
+            <div
+              class="col-lg-8 d-flex justify-content-center sortBtn flex-wrap"
+            >
+              <a href="#" class="filter-btn active" data-filter="*">all</a>
+              <a href="#" class="filter-btn" data-filter=".computers"
+                >computers</a
+              >
+              <a href="#" class="filter-btn" data-filter=".phones">phones</a>
+              <a href="#" class="filter-btn" data-filter=".consoles"
+                >consoles</a
+              >
+            </div>
+          </div>
+          <!-- products items -->
+          <div class="row grid">
+            <div class="col-lg-4 col-md-6 col-sm-6 computers">
+              <div class="single-work text-center mt-30">
+                <div class="work-image">
+                  <img src="/assets/images/producto-1.jpg" alt="" />
+                </div>
+                <div class="work-overlay">
+                  <div class="work-content">
+                    <h3 class="work-title">Product Design</h3>
+                    <ul>
+                      <li class="btn-buy">
+                        <a href="#"><i class="fa fa-plus"></i></a>Buy
+                      </li>
+                      <li class="btn-price">
+                        <a><i class="fa">$29</i></a
+                        >Price
+                      </li>
+                      <li class="btn-stock">
+                        <a><i class="fa">10</i></a
+                        >Stock
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- single work -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 computers">
+              <div class="single-work text-center mt-30">
+                <div class="work-image">
+                  <img src="/assets/images/producto-1.jpg" alt="" />
+                </div>
+                <div class="work-overlay">
+                  <div class="work-content">
+                    <h3 class="work-title">Product Design</h3>
+                    <ul>
+                      <li class="btn-buy">
+                        <a href="#"><i class="fa fa-plus"></i></a>Buy
+                      </li>
+                      <li class="btn-price">
+                        <a><i class="fa">$29</i></a
+                        >Price
+                      </li>
+                      <li class="btn-stock">
+                        <a><i class="fa">10</i></a
+                        >Stock
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- single work -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 computers">
+              <div class="single-work text-center mt-30">
+                <div class="work-image">
+                  <img src="/assets/images/producto-1.jpg" alt="" />
+                </div>
+                <div class="work-overlay">
+                  <div class="work-content">
+                    <h3 class="work-title">Product Design</h3>
+                    <ul>
+                      <li class="btn-buy">
+                        <a href="#"><i class="fa fa-plus"></i></a>Buy
+                      </li>
+                      <li class="btn-price">
+                        <a><i class="fa">$29</i></a
+                        >Price
+                      </li>
+                      <li class="btn-stock">
+                        <a><i class="fa">10</i></a
+                        >Stock
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- single work -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 computers">
+              <div class="single-work text-center mt-30">
+                <div class="work-image">
+                  <img src="/assets/images/producto-1.jpg" alt="" />
+                </div>
+                <div class="work-overlay">
+                  <div class="work-content">
+                    <h3 class="work-title">Product Design</h3>
+                    <ul>
+                      <li class="btn-buy">
+                        <a href="#"><i class="fa fa-plus"></i></a>Buy
+                      </li>
+                      <li class="btn-price">
+                        <a><i class="fa">$29</i></a
+                        >Price
+                      </li>
+                      <li class="btn-stock">
+                        <a><i class="fa">10</i></a
+                        >Stock
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- single work -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 phones">
+              <div class="single-work text-center mt-30">
+                <div class="work-image">
+                  <img src="/assets/images/producto-5.jpg" alt="" />
+                </div>
+                <div class="work-overlay">
+                  <div class="work-content">
+                    <h3 class="work-title">Product Design</h3>
+                    <ul>
+                      <li class="btn-buy">
+                        <a href="#"><i class="fa fa-plus"></i></a>Buy
+                      </li>
+                      <li class="btn-price">
+                        <a><i class="fa">$29</i></a
+                        >Price
+                      </li>
+                      <li class="btn-stock">
+                        <a><i class="fa">10</i></a
+                        >Stock
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- single work -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 phones">
+              <div class="single-work text-center mt-30">
+                <div class="work-image">
+                  <img src="/assets/images/producto-5.jpg" alt="" />
+                </div>
+                <div class="work-overlay">
+                  <div class="work-content">
+                    <h3 class="work-title">Product Design</h3>
+                    <ul>
+                      <li class="btn-buy">
+                        <a href="#"><i class="fa fa-plus"></i></a>Buy
+                      </li>
+                      <li class="btn-price">
+                        <a><i class="fa">$29</i></a
+                        >Price
+                      </li>
+                      <li class="btn-stock">
+                        <a><i class="fa">10</i></a
+                        >Stock
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- single work -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 phones">
+              <div class="single-work text-center mt-30">
+                <div class="work-image">
+                  <img src="/assets/images/producto-5.jpg" alt="" />
+                </div>
+                <div class="work-overlay">
+                  <div class="work-content">
+                    <h3 class="work-title">Product Design</h3>
+                    <ul>
+                      <li class="btn-buy">
+                        <a href="#"><i class="fa fa-plus"></i></a>Buy
+                      </li>
+                      <li class="btn-price">
+                        <a><i class="fa">$29</i></a
+                        >Price
+                      </li>
+                      <li class="btn-stock">
+                        <a><i class="fa">10</i></a
+                        >Stock
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- single work -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 consoles">
+              <div class="single-work text-center mt-30">
+                <div class="work-image">
+                  <img src="/assets/images/producto-5.jpg" alt="" />
+                </div>
+                <div class="work-overlay">
+                  <div class="work-content">
+                    <h3 class="work-title">Product Design</h3>
+                    <ul>
+                      <li class="btn-buy">
+                        <a href="#"><i class="fa fa-plus"></i></a>Buy
+                      </li>
+                      <li class="btn-price">
+                        <a><i class="fa">$29</i></a
+                        >Price
+                      </li>
+                      <li class="btn-stock">
+                        <a><i class="fa">10</i></a
+                        >Stock
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- single work -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 consoles">
+              <div class="single-work text-center mt-30">
+                <div class="work-image">
+                  <img src="/assets/images/producto-5.jpg" alt="" />
+                </div>
+                <div class="work-overlay">
+                  <div class="work-content">
+                    <h3 class="work-title">Product Design</h3>
+                    <ul>
+                      <li class="btn-buy">
+                        <a href="#"><i class="fa fa-plus"></i></a>Buy
+                      </li>
+                      <li class="btn-price">
+                        <a><i class="fa">$29</i></a
+                        >Price
+                      </li>
+                      <li class="btn-stock">
+                        <a><i class="fa">10</i></a
+                        >Stock
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- single work -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- products section end -->
+      <!-- footer section start -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <p class="copyright-text">&copy; 2022 by Shopping Cart</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer section end -->
+
+      <!-- jquery js -->
+      <script src="/assets/js/js/jquery.min.js"></script>
+      <!-- popper js -->
+      <script src="/assets/js/js/popper.min.js"></script>
+      <!-- scrollit js -->
+      <script src="/assets/js/js/scrollit.js"></script>
+      <!-- magnific popup js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+      <!-- isotope js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+      <!-- bootstrap js -->
+      <script src="/assets/js/js/bootstrap.min.js"></script>
+      <!-- main js -->
+      <script src="/assets/js/js/main.js"></script>
+    </header>
+  </body>
+</html>

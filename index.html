@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="cabezera">
+    <h1 class="titulo">Tienda</h1>
+  </header>
+  
+  <div class="contenedor__principal">
+    <main class="contenedor__productos">
+      <h2>Productos:</h2>
+      <section id="productosContenedor" class="productos"></section>
+    </main>
+
+    <asside class="contenedor__carrito">
+      <h2>Carrito:</h2>
+      <div id="articulosContenedor" class="articulos"></div>
+
+      <h3>Total: <span id="precioTotal"></span> </h3>
+
+      <div id="btnsAcciones">
+        <button type="button" class="comprar">Comprar</button>
+        <button type="button" class="limpiar" >Vaciar</button>
+      </div>
+    </asside>
+  </div>
+
+  <script src="assets/js/main.js" type="module"></script>
+</body>
+</html>
